@@ -36,7 +36,7 @@ __C.TRAIN.ENCODER_LR = 2e-4
 __C.TRAIN.RNN_GRAD_CLIP = 0.25
 __C.TRAIN.FLAG = False
 __C.TRAIN.NET_E = 'data/text_encoder200.pth'
-__C.TRAIN.NET_G = 'data/coco_AttnGAN2.pth'
+__C.TRAIN.NET_G = 'data/bird_AttnGAN2.pth'
 __C.TRAIN.B_NET_D = False
 
 __C.TRAIN.SMOOTH = edict()
