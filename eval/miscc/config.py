@@ -35,8 +35,8 @@ __C.TRAIN.GENERATOR_LR = 2e-4
 __C.TRAIN.ENCODER_LR = 2e-4
 __C.TRAIN.RNN_GRAD_CLIP = 0.25
 __C.TRAIN.FLAG = False
-__C.TRAIN.NET_E = 'data/text_encoder200.pth'
-__C.TRAIN.NET_G = 'data/bird_AttnGAN2.pth'
+__C.TRAIN.NET_E = 'data/text_encoder100.pth'
+__C.TRAIN.NET_G = 'data/coco_AttnGAN2.pth'
 __C.TRAIN.B_NET_D = False
 
 __C.TRAIN.SMOOTH = edict()
@@ -61,4 +61,3 @@ __C.TEXT = edict()
 __C.TEXT.CAPTIONS_PER_IMAGE = 10
 __C.TEXT.EMBEDDING_DIM = 256
 __C.TEXT.WORDS_NUM = 25
-
