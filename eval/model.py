@@ -26,7 +26,7 @@ class RNN_ENCODER(nn.Module):
         self.drop_prob = drop_prob  # probability of an element to be zeroed
         self.nlayers = nlayers  # Number of recurrent layers
         self.bidirectional = bidirectional
-        
+
         if bidirectional:
             self.num_directions = 2
         else:
@@ -113,7 +113,7 @@ class G_NET(nn.Module):
         nef = cfg.TEXT.EMBEDDING_DIM
         ncf = cfg.GAN.CONDITION_DIM
 
-        
+
         self.ca_net = CA_NET()
 
         if cfg.TREE.BRANCH_NUM > 0:
@@ -170,7 +170,7 @@ class CA_NET(nn.Module):
 
         self.t_dim = cfg.TEXT.EMBEDDING_DIM
         self.c_dim = cfg.GAN.CONDITION_DIM
-        
+
         self.fc = nn.Linear(self.t_dim, self.c_dim * 4, bias=True)
         self.relu = GLU()
 
